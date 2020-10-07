@@ -11,7 +11,9 @@ For the primary information on how to upload the code to the ATOM Matrix, follow
 You'll need some additional libraries.  Use the Library Manager to install them, as detailed in Guido's readme.  You will need:
 
 Adafruit_NEO_Matrix
+
 Adafruit_NEO_Pixel
+
 Adafruit_GFX
 
 You will also need to replace one file in the Adafruit_GFX library.  Copy the glcdfont.c file to the Adafruit GFX library folder (you'll find it at \Documents\Arduino\libraries\Adafruit_GFX_Library) to overwrite the existing file with the same name.  This is a custom 5x5 font file provided by @lukasmaximus89.  Many thanks to him for this file and for the inspiration for my scrolling text code.
