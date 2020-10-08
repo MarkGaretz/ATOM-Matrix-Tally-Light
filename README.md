@@ -16,7 +16,7 @@ Adafruit_NEO_Pixel
 
 Adafruit_GFX
 
-You will also need to replace one file in the Adafruit_GFX library (I have done this in the cop of that library here).  Copy the glcdfont.c file to the Adafruit GFX library folder (you'll find it at \Documents\Arduino\libraries\Adafruit_GFX_Library) to overwrite the existing file with the same name.  This is a custom 5x5 font file provided by @lukasmaximus89.  Many thanks to him for this file and for the inspiration for my scrolling text code.
+You will also need to replace one file in the Adafruit_GFX library (I have done this in the copy of that library here).  Copy the glcdfont.c file to the Adafruit GFX library folder (you'll find it at \Documents\Arduino\libraries\Adafruit_GFX_Library) to overwrite the existing file with the same name.  This is a custom 5x5 font file provided by @lukasmaximus89.  Many thanks to him for this file and for the inspiration for my scrolling text code.
 
 ## Usage
 
