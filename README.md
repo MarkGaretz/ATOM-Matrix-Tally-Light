@@ -8,7 +8,7 @@ This code can run on either the m5Stick-C or the ATOM Matrix without any changes
 
 For the primary information on how to upload the code to the ATOM Matrix, follow the directions provided by Guido Visser in the original project.  His original readme is provided here, or you can check out https://github.com/guido-visser/vMix-M5Stick-Tally-Light.  Note that you will need to tell the Arduino IDE that you have an M5Stick-C as there is no specific ATOM board type yet.  Not to worry, the M5Stick-C setting works fine.  In addition to Guido's excellent instructions you will need to do a few extra steps:
 
-You'll need some additional libraries.  Use the Library Manager to install them, as detailed in Guido's readme.  You will need:
+You'll need some additional libraries.  I have included them here or you can use the Library Manager to install them, as detailed in Guido's readme.  You will need:
 
 Adafruit_NEO_Matrix
 
@@ -16,7 +16,7 @@ Adafruit_NEO_Pixel
 
 Adafruit_GFX
 
-You will also need to replace one file in the Adafruit_GFX library.  Copy the glcdfont.c file to the Adafruit GFX library folder (you'll find it at \Documents\Arduino\libraries\Adafruit_GFX_Library) to overwrite the existing file with the same name.  This is a custom 5x5 font file provided by @lukasmaximus89.  Many thanks to him for this file and for the inspiration for my scrolling text code.
+You will also need to replace one file in the Adafruit_GFX library (I have done this in the cop of that library here).  Copy the glcdfont.c file to the Adafruit GFX library folder (you'll find it at \Documents\Arduino\libraries\Adafruit_GFX_Library) to overwrite the existing file with the same name.  This is a custom 5x5 font file provided by @lukasmaximus89.  Many thanks to him for this file and for the inspiration for my scrolling text code.
 
 ## Usage
 
