@@ -23,9 +23,11 @@ void setupmatrix() {
   matrix.fillScreen(matrix.Color(0,0,0));
   }
 
+int tnlen = 1; //LET THIS BE
+
 Preferences preferences;
 
-//DON'T CHANGE THESE VARIABLES, YOU CAN CHANGE THEM IN THE WEB UI
+//DON'T CHANGE THESE VARIABLES, YOU CAN CHANGE THEM IN THE WEB UI - Unless otherwise noted;)
 String WIFI_SSID = "";
 String WIFI_PASS = "";
 String VMIX_IP = "";
@@ -33,3 +35,4 @@ String M_TALLY = "";
 int VMIX_PORT = 8099; //USES THE TCP API PORT, THIS IS FIXED IN VMIX
 int TALLY_NR = 1;
 int BRIGHTNESS = 12; //100%
+int CONN_INT = 10; // Change this to how long the M5 should wait before attempting to reconnect to the VMIX server.
