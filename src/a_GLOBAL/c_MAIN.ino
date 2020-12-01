@@ -18,6 +18,7 @@ int interval = 5000;
 unsigned long lastCheck = 0;
 unsigned long lastBattCheck = 0;
 unsigned long lastAccCheck = 0;
+unsigned long lastConnCheck = 0;
 int screenRotation = 3;
 
 float accX = 0;
@@ -204,6 +205,13 @@ matrix.show();
     }
   }
   
+    if (CONN_INT != 0 && !client.connected() && !apEnabled && millis() > lastConnCheck + (CONN_INT * 1000))  
+  { 
+    client.stop();  
+    Serial.println("Reconnecting, based on given interval");  
+    singleReconnect();  
+  }
+  
   if (!client.connected() && !apEnabled && millis() > lastCheck + interval)
   {
     client.stop();
@@ -230,6 +238,7 @@ void start()
   M5.Lcd.println("vMix M5Stick-C Tally");
   M5.Lcd.setCursor(35, 40);
   M5.Lcd.println("by Guido Visser");
+    //matrix.setRotation(1); // Uncomment this to rotate the Matrix Display
     matrix.setTextColor(matrix.Color(0,255,0));
     matrix.setTextWrap(false);
     matrix.print("P");

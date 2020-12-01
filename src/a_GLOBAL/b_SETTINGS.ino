@@ -17,7 +17,11 @@ void loadSettings()
   if(preferences.getString("vmix_ip").length() > 0){
     TALLY_NR = preferences.getUInt("tally");
     VMIX_IP = preferences.getString("vmix_ip");
-  }
+	    if(TALLY_NR > 9){ 	
+      tnlen = 2;  	
+    } 	
+  } 	
+  CONN_INT = preferences.getUInt("conn_int") || CONN_INT;
 
   if(preferences.getString("m_tally").length() > 0){
     M_TALLY = preferences.getString("m_tally");
